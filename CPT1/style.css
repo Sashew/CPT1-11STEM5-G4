@@ -1,0 +1,152 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(51, 51, 51, 0.8);
+  padding: 20px 0;
+  z-index: 1000;
+}
+
+.navbar {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo styles */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.school-logo {
+  height: 50px; /* Adjust height as needed */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.school-name {
+  display: flex;
+  flex-direction: column; /* Stack text vertically */
+  color: white; /* Text color */
+  font-size: 1.2rem; /* Font size */
+}
+
+.school-name span {
+  line-height: 1.2; /* Adjust line height for spacing */
+}
+
+/* Group Info */
+.group-info {
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 600;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #FFD700;
+  margin-top: 5px;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex; /* Flex display for nav links */
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-links li a:hover {
+  color: #FFD700;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh; /* Adjusted height to show the bottom part of the GIF */
+  background-image: url('https://media.giphy.com/media/PwLYfy05MBVVm/giphy.gif?cid=790b7611mpfgtytutxd1719ggedewficm5159lb5b42vx4aj&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Background image */
+  background-size: cover; /* Cover the entire hero section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* To position the content above the image */
+  overflow: hidden; /* Ensure the image covers the section */
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative; /* Required for z-index to work */
+  color: white; /* Text color */
+  z-index: 1; /* Bring content above the background */
+  text-align: center; /* Centers the text */
+  padding: 50px; /* Adds space around the text */
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Button Styles */
+.hero-content .btn {
+  text-decoration: none;
+  background-color: #A1EF8B; /* Button color */
+  color: #333; /* Text color */
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease; /* Add transition for hover effects */
+  display: inline-block;
+}
+
+.hero-content .btn:hover {
+  background-color: #90D77B; /* Hover effect */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #111;
+  color: white;
+}
